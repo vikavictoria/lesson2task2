@@ -8,15 +8,13 @@
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": "latest",
-        "sourceType": "module",
-        "prefer-const": ["error", {
-            "destructuring": "any",
-            "ignoreReadBeforeAssign": false
-        }]
+        "sourceType": "module"
     },
     "plugins": ["@typescript-eslint", "prettier"],
     "rules": {
         "linebreak-style": ["error", "windows"],
-        "prettier/prettier": "error"
+        "prettier/prettier": ["error",{
+            "endOfLine": "auto"}
+        ]
     }
 }

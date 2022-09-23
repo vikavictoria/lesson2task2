@@ -129,8 +129,8 @@ const north = "север";
 const west = "запад";
 const east = "восток";
 
-const myChoice = east;
-
+let myChoice = "";
+myChoice = east;
 switch (myChoice) {
     case south:
         console.log(myChoice + ` на юг пойдешь счастье найдешь`);
