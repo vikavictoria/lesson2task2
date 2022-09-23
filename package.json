@@ -6,15 +6,15 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "format": "prettier --config .prettierrc **/*.ts --write",
-        "lint": "eslint *.{ts,json}",
-        "lint:fix": "eslint *.{ts,json} --quiet --fix",
+        "lint": "eslint \"*.{ts,json}\"",
+        "lint:fix": "eslint \"*.{ts,json}\" --fix",
         "prepare": "husky install"
     },
     "author": "",
     "license": "ISC",
     "lint-staged": {
         "*.ts": [
-            "npm run lint"
+            "npm run lint:fix"
         ]
     },
     "devDependencies": {
@@ -25,6 +25,7 @@
         "husky": "^8.0.0",
         "lint-staged": "^13.0.3",
         "prettier": "^2.7.1",
+        "ts-node": "^10.9.1",
         "typescript": "^4.8.3"
     },
     "dependencies": {
