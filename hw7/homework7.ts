@@ -1,3 +1,4 @@
+export {};
 //task1
 console.log("task1");
 const colors = ["red", "green", "blue"];

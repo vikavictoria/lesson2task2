@@ -104,13 +104,13 @@ console.log("task1 Advanced");
 function task1(st1: number, st2: number, st3: number): boolean {
     let big = 0;
     let wewe = 0;
-    if (st1 > st2 && st1 > st3) {
+    if (st1 >= st2 && st1 >= st3) {
         big = st1;
         wewe = st2 + st3;
-    } else if (st2 > st1 && st2 > st3) {
+    } else if (st2 >= st1 && st2 >= st3) {
         big = st2;
         wewe = st1 + st3;
-    } else if (st3 > st1 && st3 > st2) {
+    } else if (st3 >= st1 && st3 >= st2) {
         big = st3;
         wewe = st2 + st1;
     }
