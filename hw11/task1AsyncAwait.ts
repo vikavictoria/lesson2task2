@@ -24,5 +24,3 @@ async function showPosts() {
 showPosts().then((e) => {
     console.log(e);
 });
-
-// task 1 - Promise chaining
